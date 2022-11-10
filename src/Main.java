@@ -2,7 +2,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
+        Program();
+    }
+    public static void Program() {
         // How much do you make per year according to how many hours you work per week, and your hourly pay
 
         Scanner in = new Scanner(System.in);
@@ -20,7 +22,7 @@ public class Main {
 
         System.out.printf("You make %.2f per year ", total);
 
-        // if statements are to calculate how much taxes that the user will have to pay acccording to https://www.forbes.com/advisor/taxes/taxes-federal-income-tax-bracket/#:~:text=For%20the%202022%20tax%20year,filing%20status%20and%20taxable%20income.
+        // if statements are to calculate how much taxes that the user will have to pay according to https://www.forbes.com/advisor/taxes/taxes-federal-income-tax-bracket/#:~:text=For%20the%202022%20tax%20year,filing%20status%20and%20taxable%20income.
 
         if(total <= 10275) {
             System.out.print(total*.10);
@@ -37,10 +39,8 @@ public class Main {
         } else if(total>323925) {
             System.out.printf("and will pay %.2f in taxes",total*.37+162718);
         }
-
-
-
-
-
     }
 }
+
+
+
